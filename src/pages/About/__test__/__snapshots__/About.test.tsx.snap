@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home > should render properly 1`] = `
+<div>
+  <main
+    class="sc-dujCx eUPcGw"
+  >
+    <p>
+      This is About Page
+    </p>
+  </main>
+</div>
+`;
+
+exports[`Home should render properly 1`] = `
+<div>
+  <main
+    class="sc-gQiKMQ jSvYjQ"
+  >
+    <p>
+      This is About Page
+    </p>
+  </main>
+</div>
+`;
