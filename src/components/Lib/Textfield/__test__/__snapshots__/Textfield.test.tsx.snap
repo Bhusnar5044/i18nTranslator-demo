@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Textfield > should render properly 1`] = `
+<div>
+  <div
+    class="sc-eLqIir cOViYd"
+  >
+    <input
+      class="sc-hIFLYB iWjxZU"
+      type="text"
+    />
+    <label
+      class="sc-HzRMQ dZzpxc"
+    />
+  </div>
+</div>
+`;

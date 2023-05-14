@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleSelect > should render properly 1`] = `<div />`;
+
+exports[`SingleSelect > should render properly with default props 1`] = `
+<div>
+  <div
+    class="sc-eLqIir dKTRNe"
+    gap="1rem"
+  >
+    <label
+      for="select2"
+    >
+      Select2
+    </label>
+    <select
+      class="sc-dujCx iseyOr"
+      title="single-select"
+    >
+      <option
+        class="sc-bFmjqi gTeLlR"
+        value="dummy"
+      >
+        Dummy
+      </option>
+      <option
+        class="sc-bFmjqi gTeLlR"
+        value="dummy1"
+      >
+        Dummy1
+      </option>
+    </select>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect should render properly with default props 1`] = `
+<div>
+  <div
+    class="sc-eLqIir dKTRNe"
+    gap="1rem"
+  >
+    <label
+      for="select2"
+    >
+      Select2
+    </label>
+    <select
+      class="sc-dujCx iseyOr"
+      title="single-select"
+    >
+      <option
+        class="sc-bFmjqi gTeLlR"
+        value="dummy"
+      >
+        Dummy
+      </option>
+      <option
+        class="sc-bFmjqi gTeLlR"
+        value="dummy1"
+      >
+        Dummy1
+      </option>
+    </select>
+  </div>
+</div>
+`;

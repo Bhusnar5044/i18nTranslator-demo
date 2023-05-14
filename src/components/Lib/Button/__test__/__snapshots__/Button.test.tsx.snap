@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button > should render properly 1`] = `
+<div>
+  <button
+    class="sc-eLqIir hAXWRT"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button > should render properly 2`] = `
+<div>
+  <button
+    class="sc-eLqIir hAXWRT"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button > should render with content 1`] = `
+<div>
+  <button
+    class="sc-eLqIir hAXWRT"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button > should render with properly 1`] = `
+<div>
+  <button
+    class="sc-eLqIir hAXWRT"
+    type="button"
+  />
+</div>
+`;
+
+exports[`Button should render properly 1`] = `
+<div>
+  <button
+    class="sc-eLqIir hAXWRT"
+    type="button"
+  />
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text > should render properly 1`] = `
+<div>
+  <span
+    class="sc-eLqIir BTxYD"
+    textalign="initial"
+    textcolor="inherit"
+  />
+</div>
+`;
+
+exports[`Text should render properly 1`] = `
+<div>
+  <span
+    class="sc-eLqIir BTxYD"
+    textalign="initial"
+    textcolor="inherit"
+  />
+</div>
+`;
