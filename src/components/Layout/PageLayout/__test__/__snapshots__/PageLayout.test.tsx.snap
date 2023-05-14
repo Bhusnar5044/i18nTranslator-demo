@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLayout component > should render properly 1`] = `
+<div>
+  <div
+    class="sc-buuUZy isgRKr"
+  >
+    <main
+      class="sc-HzRMQ mFbgI"
+    >
+      <p>
+        dummy Text
+      </p>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`PageLayout component should render properly 1`] = `
+<div>
+  <div
+    class="sc-buuUZy isgRKr"
+  >
+    <main
+      class="sc-HzRMQ mFbgI"
+    >
+      <p>
+        dummy Text
+      </p>
+    </main>
+  </div>
+</div>
+`;

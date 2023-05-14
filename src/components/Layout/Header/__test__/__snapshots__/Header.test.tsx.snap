@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header > should render properly 1`] = `
+<div>
+  <header
+    class="sc-hIFLYB cWfpsV"
+  >
+    <div
+      class="sc-buuUZy cioRTw"
+    >
+      <img
+        class="sc-ivAPlj hyHNBS"
+        src="/centime-logo.svg"
+      />
+      <div
+        class="form-group"
+      >
+        <select
+          class="sc-eLqIir dmSHxF form-control"
+        >
+          <option
+            class="sc-HzRMQ gxWMSa"
+            disabled=""
+            value=""
+          >
+            Switch Language
+          </option>
+        </select>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Header should render properly 1`] = `
+<div>
+  <header
+    class="sc-iGsdBT fahxpC"
+  >
+    <div
+      class="sc-ckeRpf bulpVB"
+    >
+      <img
+        class="sc-kRYBTm gNfNKR"
+        src="/centime-logo.svg"
+      />
+      <div
+        class="sc-eLqIir dKTRNe"
+        gap="1rem"
+      >
+        <select
+          class="sc-dujCx iseyOr"
+          title="single-select"
+        >
+          <option
+            class="sc-bFmjqi gTeLlR"
+            disabled=""
+            value=""
+          >
+            Switch Language
+          </option>
+        </select>
+      </div>
+    </div>
+  </header>
+</div>
+`;

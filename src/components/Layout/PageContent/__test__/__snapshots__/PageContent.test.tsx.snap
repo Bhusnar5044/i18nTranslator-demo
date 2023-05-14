@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContent component > should render properly 1`] = `
+<div>
+  <main
+    class="sc-HzRMQ mFbgI"
+  >
+    Demo PageContent
+  </main>
+</div>
+`;
+
+exports[`PageContent component > should render with loader properly 1`] = `
+<div>
+  <main
+    class="sc-HzRMQ mFbgI"
+  >
+    <div
+      class="sc-hIFLYB ixohVo"
+    >
+      <img
+        class="sc-eLqIir iGbLNM"
+        src="/reactLogo.svg"
+      />
+    </div>
+    Demo PageContent
+  </main>
+</div>
+`;
+
+exports[`PageContent component should render properly 1`] = `
+<div>
+  <main
+    class="sc-HzRMQ mFbgI"
+  >
+    Demo PageContent
+  </main>
+</div>
+`;
