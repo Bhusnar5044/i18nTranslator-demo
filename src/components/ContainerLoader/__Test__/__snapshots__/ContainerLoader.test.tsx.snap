@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContainerLoader > should render properly 1`] = `
+<div>
+  <img
+    class="sc-eLqIir iGbLNM"
+    src="/reactLogo.svg"
+  />
+</div>
+`;
+
+exports[`ContainerLoader should render properly 1`] = `
+<div>
+  <img
+    class="sc-eLqIir iGbLNM"
+    src="/reactLogo.svg"
+    title="loader"
+  />
+</div>
+`;
