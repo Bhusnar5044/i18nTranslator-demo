@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { forwardRef, memo, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { TextStyled } from './styled';
 import { TextProps } from './types';
 
@@ -22,9 +23,11 @@ const Component: FC<TextProps> = memo(
 
             return type;
         }, [textWeight, textVariant]);
+        const { t } = useTranslation();
+
         return (
             <TextStyled {...{ textVariant, textWeight, textAlign, ...restProps }} as={as || componentType} ref={ref}>
-                {children}
+                {t(`${children}`)}
             </TextStyled>
         );
     }),
