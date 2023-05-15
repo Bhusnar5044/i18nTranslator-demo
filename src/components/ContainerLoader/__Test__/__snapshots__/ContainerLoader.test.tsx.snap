@@ -1,18 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContainerLoader > should render properly 1`] = `
-<div>
-  <img
-    class="sc-eLqIir iGbLNM"
-    src="/reactLogo.svg"
-  />
-</div>
-`;
-
 exports[`ContainerLoader should render properly 1`] = `
+.c0 {
+  width: 10rem;
+  height: auto;
+  margin: auto;
+  animation: gOaCMp infinite 20s linear;
+}
+
 <div>
   <img
-    class="sc-eLqIir iGbLNM"
+    class="c0"
     src="/reactLogo.svg"
     title="loader"
   />

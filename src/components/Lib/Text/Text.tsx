@@ -27,8 +27,7 @@ const Component: FC<TextProps> = memo(
 
         return (
             <TextStyled {...{ textVariant, textWeight, textAlign, ...restProps }} as={as || componentType} ref={ref}>
-                {/* {t(`${children}`)} */}
-                {t(`${translationRef}`, { ns: ['translation'] })}
+                {translationRef ? t(`${translationRef}`, { ns: ['translation'] }) : children}
             </TextStyled>
         );
     }),

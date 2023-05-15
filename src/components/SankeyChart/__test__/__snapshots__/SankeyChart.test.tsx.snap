@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home should render properly 1`] = `
+exports[`SankeyChart should render properly 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+}
+
 .c1 {
   margin: 0;
   color: inherit;
@@ -11,16 +16,10 @@ exports[`Home should render properly 1`] = `
   text-align: initial;
 }
 
-.c0 {
-  overflow: auto;
-  padding-top: 32px;
-  width: 86%;
-  margin: auto;
-}
-
 <div>
-  <main
+  <div
     class="c0"
+    flexdirection="column"
   >
     <h3
       class="c1"
@@ -28,8 +27,8 @@ exports[`Home should render properly 1`] = `
       textcolor="inherit"
       textvariant="h3"
     >
-      line3
+      line2
     </h3>
-  </main>
+  </div>
 </div>
 `;

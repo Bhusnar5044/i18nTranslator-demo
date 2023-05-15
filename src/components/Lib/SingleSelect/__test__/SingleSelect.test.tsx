@@ -26,13 +26,13 @@ describe('SingleSelect', () => {
         expect(screen.getByText('Dummy')).toBeInTheDocument();
     });
 
-    it('should call onChange method on click of option', () => {
+    it('should call onChange method on option change', () => {
         renderer();
         const element = screen.getByTitle('single-select');
         fireEvent.click(element);
         const option = screen.getByText('Dummy');
         expect(option).toBeInTheDocument();
-        fireEvent.click(option);
-        expect(onChange).toHaveBeenCalled();
+        fireEvent.change(element, { target: { value: 'dummy' } });
+        expect(onChange).toBeCalled();
     });
 });
