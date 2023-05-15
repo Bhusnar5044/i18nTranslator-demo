@@ -35,6 +35,7 @@ export default {
         '^@store(.*)$': '<rootDir>/src/store$1',
         '^@test-utils': '<rootDir>/src/utils/test-utils',
         '^@components(.*)$': '<rootDir>/src/components$1',
+        '^@Lib(.*)$': '<rootDir>/src/components/Lib$1',
         '^@theme(.*)$': '<rootDir>/src/theme$1',
         '^@utils(.*)$': '<rootDir>/src/utils$1',
         '^@pages(.*)$': '<rootDir>/src/pages$1',
