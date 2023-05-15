@@ -13,7 +13,8 @@ import { useTranslation } from 'react-i18next';
 const formattedOptions = [
     { value: '', label: 'Switch Language', disabled: true },
     { value: 'en', label: 'English' },
-    { value: 'fr', label: 'Français' },
+    { value: 'fr', label: 'French' },
+    { value: 'fr', label: 'Spanish' },
 ];
 
 export const SwitchLanguage: FC = memo(() => {

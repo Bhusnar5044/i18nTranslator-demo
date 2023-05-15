@@ -5,7 +5,7 @@ import { TextStyled } from './styled';
 import { TextProps } from './types';
 
 const Component: FC<TextProps> = memo(
-    forwardRef(({ as, textVariant, textWeight, textAlign, children, ...restProps }, ref) => {
+    forwardRef(({ as, textVariant, textWeight, textAlign, children, translationRef, ...restProps }, ref) => {
         const componentType = useMemo(() => {
             let type: keyof JSX.IntrinsicElements | React.ComponentType<any> =
                 (textVariant as keyof JSX.IntrinsicElements) || 'span';
@@ -27,7 +27,8 @@ const Component: FC<TextProps> = memo(
 
         return (
             <TextStyled {...{ textVariant, textWeight, textAlign, ...restProps }} as={as || componentType} ref={ref}>
-                {t(`${children}`)}
+                {/* {t(`${children}`)} */}
+                {t(`${translationRef}`, { ns: ['translation'] })}
             </TextStyled>
         );
     }),

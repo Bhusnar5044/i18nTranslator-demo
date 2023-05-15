@@ -17,12 +17,12 @@ export const options = {
 
 export const SankeyChart: FC = memo(() => {
     const {
-        sankeyData: { links, nodes },
+        sankeyData: { links },
     } = useAppSelector((state) => state.salary) as SalaryState;
     const data = [['from', 'to', 'weight'], ...links.map((item) => Object.values(item))];
     return (
         <Box flexDirection="column">
-            <Text textVariant="h3">Sankey Chart</Text>
+            <Text textVariant="h3" translationRef="line2" />
             <Chart chartType="Sankey" width="100%" height="100vh" data={data} options={options} />
         </Box>
     );

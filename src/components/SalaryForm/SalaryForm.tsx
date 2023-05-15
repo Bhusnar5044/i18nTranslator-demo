@@ -23,7 +23,7 @@ export const SalaryForm: FC = memo(() => {
 
     return (
         <Box flexDirection="column" gap="3rem">
-            <Text textVariant="h3">Expenditure Details</Text>
+            <Text textVariant="h3" translationRef="line1" />
             {isLoading && <ContainerLoader />}
             {!isLoading && <NestedTextInput node={expenditure} onSubmit={onSubmit} />}
         </Box>
