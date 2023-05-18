@@ -14,7 +14,9 @@ export default {
     },
     collectCoverageFrom: [
         '<rootDir>/src/**/*.(ts|tsx)',
+        '!<rootDir>/**/main.(ts|tsx)',
         '!<rootDir>/**/index.(ts|tsx)',
+        '!<rootDir>/**/i18n.(ts|tsx)',
         '!<rootDir>/src/App.tsx',
         '!<rootDir>/src/theme/**',
         '!<rootDir>/src/store/sagas.ts',
@@ -23,6 +25,7 @@ export default {
         '!<rootDir>/src/**/types/**',
         '!<rootDir>/src/utils/test-utils.tsx',
         '!<rootDir>/src/routes/**',
+        '!<rootDir>/src/utils/localStorage.ts',
     ],
     coverageDirectory: '<rootDir>/coverage/',
     moduleFileExtensions: ['.mjs', 'ts', 'tsx', 'js', 'jsx', 'svg'],
