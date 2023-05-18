@@ -1,25 +1,20 @@
 import { Box, Button, Textfield } from '@Lib';
+import { SankeyNode } from '@store/salary';
 import React, { useCallback, useState } from 'react';
 
-interface BudgetItem {
-    name: string;
-    value: number;
-    children?: BudgetItem[];
-}
-
 interface Props {
-    node: BudgetItem;
-    onSubmit: (node: BudgetItem) => void;
+    node: SankeyNode;
+    onSubmit: (node: SankeyNode) => void;
 }
 
 const Budget: React.FC<Props> = ({ node, onSubmit }) => {
-    const [values, setValues] = useState<BudgetItem>(node);
+    const [values, setValues] = useState<SankeyNode>(node);
 
-    const handleValueChange = (newValue: number, item: BudgetItem) => {
+    const handleValueChange = (newValue: number, item: SankeyNode) => {
         const newValues = { ...values };
-        const setValue = (item: BudgetItem, value: number) => {
+        const setValue = (item: SankeyNode, value: number) => {
             item.value = value;
-            if (item.children) {
+            if (item?.children) {
                 item.children.forEach((child) => setValue(child, value));
             }
         };
@@ -31,16 +26,19 @@ const Budget: React.FC<Props> = ({ node, onSubmit }) => {
         onSubmit(values);
     }, [onSubmit, values]);
 
-    const renderBudgetItem = (item: BudgetItem) => {
+    const renderBudgetItem = (item: SankeyNode) => {
         return (
-            <Box key={item.name} flexWrap="wrap" gap="1rem">
+            <Box key={item?.name} flexWrap="wrap" gap="1rem">
                 <Textfield
-                    label={item.name}
-                    value={item.value}
+                    type="text"
+                    name={item?.name || ''}
+                    placeholder={`Enter ${item?.name || ''}`}
+                    label={item?.name || ''}
+                    value={item?.value}
                     onChange={(e) => handleValueChange(+e.target.value, item)}
-                    disabled={!!item.children}
+                    disabled={!!item?.children}
                 />
-                {item.children && item.children.map(renderBudgetItem)}
+                {item?.children && item.children.map(renderBudgetItem)}
             </Box>
         );
     };
