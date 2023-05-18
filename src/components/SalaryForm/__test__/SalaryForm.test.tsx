@@ -27,6 +27,10 @@ const renderer = (isLoading = false) => {
 };
 
 describe('SalaryForm', () => {
+    beforeEach(() => {
+        jest.resetAllMocks();
+    });
+
     it('should render properly', () => {
         const { container } = renderer();
         expect(container).toMatchSnapshot();
@@ -37,7 +41,7 @@ describe('SalaryForm', () => {
         expect(screen.getByTitle('loader')).toBeInTheDocument();
     });
 
-    it('should dispatch fetch request action', () => {
+    it('should dispatch fetch request action on render', () => {
         const { store } = renderer(true);
         expect(store.getActions()).toStrictEqual([getSalaryRequest()]);
     });
