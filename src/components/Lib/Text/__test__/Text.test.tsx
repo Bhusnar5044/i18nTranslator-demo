@@ -25,4 +25,15 @@ describe('Text', () => {
         );
         expect(screen.getByText('Dummy Text')).toHaveStyleRule('color', 'red', 'text-align', 'center');
     });
+
+    it('should render properly with uppercase and lineThrough prop', () => {
+        render(
+            <Text uppercase lineThrough>
+                Dummy Text
+            </Text>,
+        );
+        const text = screen.getByText(/DUMMY TEXT/i);
+        expect(text).toBeInTheDocument();
+        expect(text).toHaveStyleRule('text-decoration', 'line-through');
+    });
 });

@@ -1,4 +1,5 @@
 import { initialState } from '@store';
+import { getSalaryRequest } from '@store/salary';
 import { fireEvent, render, screen } from '@test-utils';
 import * as salary from '@utils/mockData/salary.json';
 import { Provider } from 'react-redux';
@@ -24,6 +25,7 @@ const renderer = (isLoading = false) => {
 
     return { store, ...utils };
 };
+
 describe('SalaryForm', () => {
     it('should render properly', () => {
         const { container } = renderer();
@@ -33,6 +35,11 @@ describe('SalaryForm', () => {
     it('should show loader if isLoading is true', () => {
         renderer(true);
         expect(screen.getByTitle('loader')).toBeInTheDocument();
+    });
+
+    it('should dispatch fetch request action', () => {
+        const { store } = renderer(true);
+        expect(store.getActions()).toStrictEqual([getSalaryRequest()]);
     });
 
     it('should should trigger onSubmit method with changed data', () => {
