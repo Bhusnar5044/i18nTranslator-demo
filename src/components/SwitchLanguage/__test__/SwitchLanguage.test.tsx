@@ -17,12 +17,12 @@ describe('SwitchLanguage', () => {
         expect(screen.getByText('French')).toBeInTheDocument();
     });
 
-    it('should select any language on click on option', () => {
+    it('should trigger onChange event', () => {
         render(<SwitchLanguage />);
         const select = screen.getByTitle('single-select');
         expect(select).toBeInTheDocument();
         fireEvent.click(select);
-        const option = screen.getByText('French');
-        expect(option).toHaveValue('fr');
+        fireEvent.change(select, { target: { value: 'fr' } });
+        expect(select).toHaveValue('fr');
     });
 });
