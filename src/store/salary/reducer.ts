@@ -1,5 +1,4 @@
 import { generateSankeyData } from '@utils';
-import { Reducer } from 'react';
 import { SalaryActionTypes, SalaryActions, SalaryState } from './types';
 
 export const initialState: SalaryState = {
@@ -8,7 +7,7 @@ export const initialState: SalaryState = {
     sankeyData: { nodes: [], links: [] },
 };
 
-export const salaryReducer: Reducer<SalaryState, SalaryActions> = (state = initialState, action) => {
+export const salaryReducer = (state: SalaryState = initialState, action: SalaryActions): SalaryState => {
     switch (action.type) {
         case SalaryActionTypes.GET_SALARY_REQUEST:
             return { ...state, isLoading: true };

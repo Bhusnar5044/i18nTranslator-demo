@@ -5,14 +5,14 @@ export function generateSankeyData(node: SankeyNode, parentName?: string): Sanke
     const links: SankeyLink[] = [];
 
     function traverseNode(node: SankeyNode, parentName?: string): string {
-        const nodeName = node.name || '';
-        nodes.push({ name: nodeName, value: node.value });
+        const nodeName = node?.name || '';
+        nodes.push({ name: nodeName, value: node?.value || 0 });
 
         if (parentName) {
-            links.push({ source: parentName, target: nodeName, value: node.value || 0 });
+            links.push({ source: parentName, target: nodeName, value: node?.value || 0 });
         }
 
-        if (node.children) {
+        if (node?.children) {
             const childrenNames = node.children.map((childNode) => traverseNode(childNode, nodeName));
             return childrenNames.join(';');
         }
