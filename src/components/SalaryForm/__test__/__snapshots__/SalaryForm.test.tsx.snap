@@ -125,11 +125,129 @@ exports[`SalaryForm should render properly 1`] = `
         >
           <input
             class="c5"
+            disabled=""
+            name="income"
+            placeholder="Enter income"
             type="text"
+            value="820000"
           />
           <label
             class="c6"
-          />
+          >
+            income
+          </label>
+        </div>
+        <div
+          class="c3"
+          flexwrap="wrap"
+          gap="1rem"
+        >
+          <div
+            class="c4"
+          >
+            <input
+              class="c5"
+              disabled=""
+              name="budget"
+              placeholder="Enter budget"
+              type="text"
+              value="104000"
+            />
+            <label
+              class="c6"
+            >
+              budget
+            </label>
+          </div>
+          <div
+            class="c3"
+            flexwrap="wrap"
+            gap="1rem"
+          >
+            <div
+              class="c4"
+            >
+              <input
+                class="c5"
+                disabled=""
+                name="rent & bills"
+                placeholder="Enter rent & bills"
+                type="text"
+                value="15500"
+              />
+              <label
+                class="c6"
+              >
+                rent & bills
+              </label>
+            </div>
+            <div
+              class="c3"
+              flexwrap="wrap"
+              gap="1rem"
+            >
+              <div
+                class="c4"
+              >
+                <input
+                  class="c5"
+                  name="rent"
+                  placeholder="Enter rent"
+                  type="text"
+                  value="11000"
+                />
+                <label
+                  class="c6"
+                >
+                  rent
+                </label>
+              </div>
+            </div>
+            <div
+              class="c3"
+              flexwrap="wrap"
+              gap="1rem"
+            >
+              <div
+                class="c4"
+              >
+                <input
+                  class="c5"
+                  name="Laundry"
+                  placeholder="Enter Laundry"
+                  type="text"
+                  value="500"
+                />
+                <label
+                  class="c6"
+                >
+                  Laundry
+                </label>
+              </div>
+            </div>
+            <div
+              class="c3"
+              flexwrap="wrap"
+              gap="1rem"
+            >
+              <div
+                class="c4"
+              >
+                <input
+                  class="c5"
+                  name="gas, water & electricity"
+                  placeholder="Enter gas, water & electricity"
+                  type="text"
+                  value="1000"
+                />
+                <label
+                  class="c6"
+                >
+                  gas, water & electricity
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <button

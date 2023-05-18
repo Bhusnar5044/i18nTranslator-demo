@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SalaryForm should render properly 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.c1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.c5 {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  background: #008060;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+}
+
+.c5 :hover {
+  background: #006e52;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: 0.1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+
+.c3 {
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  color: gray;
+  transition: 0.1s ease-out;
+}
+
+.c3:focus {
+  border-color: #6200ee;
+}
+
+.c3:focus+label {
+  color: #6200ee;
+  top: 0;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.c3:not(:placeholder-shown)+label {
+  top: 0;
+  transform: translateY(-50%) scale(0.9);
+}
+
+<div>
+  <div
+    alignitems="start"
+    class="c0"
+    flexdirection="column"
+    gap="2rem"
+  >
+    <div
+      class="c1"
+      flexwrap="wrap"
+      gap="1rem"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3"
+          disabled=""
+          name="income"
+          placeholder="Enter income"
+          type="text"
+          value="820000"
+        />
+        <label
+          class="c4"
+        >
+          income
+        </label>
+      </div>
+      <div
+        class="c1"
+        flexwrap="wrap"
+        gap="1rem"
+      >
+        <div
+          class="c2"
+        >
+          <input
+            class="c3"
+            disabled=""
+            name="budget"
+            placeholder="Enter budget"
+            type="text"
+            value="104000"
+          />
+          <label
+            class="c4"
+          >
+            budget
+          </label>
+        </div>
+        <div
+          class="c1"
+          flexwrap="wrap"
+          gap="1rem"
+        >
+          <div
+            class="c2"
+          >
+            <input
+              class="c3"
+              disabled=""
+              name="rent & bills"
+              placeholder="Enter rent & bills"
+              type="text"
+              value="15500"
+            />
+            <label
+              class="c4"
+            >
+              rent & bills
+            </label>
+          </div>
+          <div
+            class="c1"
+            flexwrap="wrap"
+            gap="1rem"
+          >
+            <div
+              class="c2"
+            >
+              <input
+                class="c3"
+                name="rent"
+                placeholder="Enter rent"
+                type="text"
+                value="11000"
+              />
+              <label
+                class="c4"
+              >
+                rent
+              </label>
+            </div>
+          </div>
+          <div
+            class="c1"
+            flexwrap="wrap"
+            gap="1rem"
+          >
+            <div
+              class="c2"
+            >
+              <input
+                class="c3"
+                name="Laundry"
+                placeholder="Enter Laundry"
+                type="text"
+                value="500"
+              />
+              <label
+                class="c4"
+              >
+                Laundry
+              </label>
+            </div>
+          </div>
+          <div
+            class="c1"
+            flexwrap="wrap"
+            gap="1rem"
+          >
+            <div
+              class="c2"
+            >
+              <input
+                class="c3"
+                name="gas, water & electricity"
+                placeholder="Enter gas, water & electricity"
+                type="text"
+                value="1000"
+              />
+              <label
+                class="c4"
+              >
+                gas, water & electricity
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="c5"
+      type="button"
+    >
+      Save
+    </button>
+  </div>
+</div>
+`;

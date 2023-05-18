@@ -154,6 +154,8 @@ exports[`Home should render properly 1`] = `
             >
               <input
                 class="c7"
+                name=""
+                placeholder="Enter "
                 type="text"
               />
               <label
