@@ -1,5 +1,4 @@
 import {
-    DeleteSalary,
     EditSalary,
     GetSalaryFailed,
     GetSalaryRequest,
@@ -24,9 +23,4 @@ export const getSalaryFailed = (): GetSalaryFailed => ({
 export const editSalary = (payload: SankeyNode): EditSalary => ({
     payload,
     type: SalaryActionTypes.EDIT_SALARY,
-});
-
-export const deleteSalary = (payload: SankeyNode): DeleteSalary => ({
-    payload,
-    type: SalaryActionTypes.DELETE_SALARY,
 });

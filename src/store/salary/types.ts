@@ -5,7 +5,6 @@ export enum SalaryActionTypes {
     GET_SALARY_SUCCESS = '@salary/GET_SALARY_SUCCESS',
     GET_SALARY_FAILED = '@salary/GET_SALARY_FAILED',
     EDIT_SALARY = '@salary/EDIT_SALARY',
-    DELETE_SALARY = '@salary/DELETE_SALARY',
 }
 
 export interface SankeyNode {
@@ -48,9 +47,4 @@ export interface EditSalary extends Action {
     type: typeof SalaryActionTypes.EDIT_SALARY;
 }
 
-export interface DeleteSalary extends Action {
-    payload: SankeyNode;
-    type: typeof SalaryActionTypes.DELETE_SALARY;
-}
-
-export type SalaryActions = GetSalaryRequest | GetSalarySuccess | GetSalaryFailed | EditSalary | DeleteSalary;
+export type SalaryActions = GetSalaryRequest | GetSalarySuccess | GetSalaryFailed | EditSalary;

@@ -13,7 +13,6 @@ export const salaryReducer = (state: SalaryState = initialState, action: SalaryA
             return { ...state, isLoading: true };
         case SalaryActionTypes.GET_SALARY_SUCCESS:
         case SalaryActionTypes.EDIT_SALARY:
-        case SalaryActionTypes.DELETE_SALARY:
             return {
                 ...state,
                 isLoading: false,
